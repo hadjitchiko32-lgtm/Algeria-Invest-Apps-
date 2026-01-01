@@ -1,67 +1,42 @@
 <!DOCTYPE html>
 <html lang="ar" dir="rtl">
 <head>
-   <meta name="google-site-verification" content="1DDfc-XS0nzB8_awfNK5J4TZX7Mr-4ouLjDqG26W4jg" /> <meta charset="UTF-8">
+    <meta name="google-site-verification" content="XS0nzB8_awfNK5J4TZX7Mr-4ouLjDqG26W4jg" />
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>أسعار السكوار - الجزائر</title>
+    
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4307090858163939"
+     crossorigin="anonymous"></script>
+
     <style>
-        body { font-family: 'Arial', sans-serif; background-color: #f4f7f6; margin: 0; padding: 20px; text-align: center; }
-        .app-card { background: white; border-radius: 15px; padding: 20px; max-width: 400px; margin: auto; box-shadow: 0 4px 15px rgba(0,0,0,0.1); }
-        h2 { color: #2c3e50; border-bottom: 2px solid #3498db; padding-bottom: 10px; }
-        .ad-banner { background: #eee; margin: 15px 0; min-height: 60px; display: flex; align-items: center; justify-content: center; font-size: 12px; color: #777; border-radius: 8px; }
-        .price-box { display: flex; justify-content: space-between; padding: 12px; border-bottom: 1px solid #eee; transition: 0.3s; }
-        .price-box:hover { background: #f9f9f9; }
-        .currency-name { font-weight: bold; font-size: 1.1em; }
-        .currency-value { color: #27ae60; font-weight: bold; font-size: 1.2em; }
-        .calculator { margin-top: 20px; background: #ebf5fb; padding: 15px; border-radius: 10px; }
-        input { width: 80%; padding: 10px; margin: 10px 0; border: 1px solid #ccc; border-radius: 5px; text-align: center; font-size: 1.1em; }
-        .footer-note { font-size: 0.8em; color: #7f8c8d; margin-top: 20px; }
+        body { font-family: Arial, sans-serif; background-color: #f4f4f4; text-align: center; padding: 20px; }
+        .container { background: white; padding: 20px; border-radius: 10px; box-shadow: 0 0 10px rgba(0,0,0,0.1); max-width: 400px; margin: auto; }
+        h1 { color: #2c3e50; }
+        .price-box { font-size: 24px; font-weight: bold; color: #27ae60; margin: 20px 0; }
+        .ad-container { margin-top: 30px; background: #eee; padding: 10px; min-height: 100px; }
     </style>
 </head>
 <body>
 
-<div class="app-card">
-    <h2>🇩🇿 أسعار العملات (السكوار)</h2>
-
-    <div class="ad-banner">
-        <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4307090032919540" crossorigin="anonymous"></script>
-        <ins class="adsbygoogle" style="display:inline-block;width:320px;height:50px" data-ad-client="ca-pub-4307090032919540" data-ad-slot="6496543358"></ins>
-        <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+    <div class="container">
+        <h1>أسعار السكوار اليوم</h1>
+        <p>سعر الأورو مقابل الدينار الجزائري:</p>
+        <div class="price-box">1€ = 242 DA</div>
+        <p>آخر تحديث: 01 جانفي 2026</p>
     </div>
 
-    <div class="price-box">
-        <span class="currency-name">1 أورو (€)</span>
-        <span class="currency-value">24,200 دج</span>
+    <div class="ad-container">
+        <ins class="adsbygoogle"
+             style="display:block"
+             data-ad-client="ca-pub-4307090858163939"
+             data-ad-slot="9731679058"
+             data-ad-format="auto"
+             data-full-width-responsive="true"></ins>
+        <script>
+             (adsbygoogle = window.adsbygoogle || []).push({});
+        </script>
     </div>
-    <div class="price-box">
-        <span class="currency-name">1 دولار ($)</span>
-        <span class="currency-value">22,500 دج</span>
-    </div>
-    <div class="price-box">
-        <span class="currency-name">1 دينار تونسي (TND)</span>
-        <span class="currency-value" style="color: #e67e22;">7,200 دج</span>
-    </div>
-    <div class="price-box">
-        <span class="currency-name">1 دينار ليبي (LYD)</span>
-        <span class="currency-value" style="color: #8e44ad;">4,600 دج</span>
-    </div>
-
-    <div class="calculator">
-        <p>🔄 محول سريع (أورو إلى دينار)</p>
-        <input type="number" id="euroInput" placeholder="أدخل مبلغ الأورو" oninput="convert()">
-        <p id="result" style="font-weight: bold; color: #2c3e50;">النتيجة: 0 دج</p>
-    </div>
-
-    <p class="footer-note">* الأسعار تقريبية حسب سوق السكوار اليوم</p>
-</div>
-
-<script>
-    function convert() {
-        let euro = document.getElementById('euroInput').value;
-        let res = euro * 242;
-        document.getElementById('result').innerText = "النتيجة: " + res.toLocaleString() + " دج";
-    }
-</script>
 
 </body>
 </html>
