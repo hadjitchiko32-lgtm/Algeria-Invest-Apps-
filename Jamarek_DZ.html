@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>جمارك السيارات DZ</title>
+    <style>
+        body { font-family: 'Segoe UI', sans-serif; background-color: #1a1a2e; color: white; margin: 0; padding: 15px; text-align: center; }
+        .app-container { background: #16213e; border-radius: 20px; padding: 25px; box-shadow: 0 10px 30px rgba(0,0,0,0.5); max-width: 400px; margin: auto; }
+        h2 { color: #e94560; margin-bottom: 20px; }
+        input, select { width: 100%; padding: 12px; margin: 10px 0; border-radius: 10px; border: none; font-size: 16px; box-sizing: border-box; }
+        button { width: 100%; padding: 15px; background-color: #e94560; color: white; border: none; border-radius: 10px; font-size: 18px; font-weight: bold; cursor: pointer; }
+        .result { background: #0f3460; padding: 20px; border-radius: 10px; margin-top: 20px; display: none; border-right: 5px solid #e94560; }
+        .ad-box { width: 100%; height: 60px; background: #0f3460; margin: 15px 0; display: flex; align-items: center; justify-content: center; font-size: 12px; color: #533483; border-radius: 8px; border: 1px solid #533483; }
+    </style>
+</head>
+<body>
+
+<div class="app-container">
+    <h2>حاسبة الجمارك 🚗🇩🇿</h2>
+    
+    <div class="ad-box">إعلان AdMob (ربح تلقائي)</div>
+
+    <input type="number" id="carPrice" placeholder="سعر السيارة بالدينار (أو الأورو)">
+    <select id="engineType">
+        <option value="0.15">بنزين (Essence)</option>
+        <option value="0.20">ديزل (Diesel)</option>
+        <option value="0.10">كهربائية / هجينة</option>
+    </select>
+    
+    <button onclick="calculateTax()">احسب التكلفة الإجمالية</button>
+
+    <div id="resultArea" class="result">
+        <div style="font-size: 14px; color: #888;">التكلفة التقديرية للرسوم:</div>
+        <div id="taxValue" style="font-size: 22px; color: #e94560; font-weight: bold;"></div>
+    </div>
+
+    <div class="ad-box">إعلان AdMob (ربح تلقائي)</div>
+</div>
+
+<script>
+    function calculateTax() {
+        let price = document.getElementById('carPrice').value;
+        let rate = document.getElementById('engineType').value;
+        let resArea = document.getElementById('resultArea');
+        let resVal = document.getElementById('taxValue');
+
+        if(price) {
+            let totalTax = price * rate; // حساب تقريبي للرسوم
+            resVal.innerText = totalTax.toLocaleString() + " دج";
+            resArea.style.display = "block";
+        } else {
+            alert("يرجى إدخال السعر أولاً");
+        }
+    }
+</script>
+
+</body>
+</html>

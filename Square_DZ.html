@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>أسعار السكوار - Square DZ</title>
+    <style>
+        body { font-family: 'Arial', sans-serif; background-color: #eef2f3; margin: 0; padding: 15px; text-align: center; }
+        .app-card { background: white; border-radius: 20px; padding: 20px; box-shadow: 0 8px 20px rgba(0,0,0,0.1); max-width: 400px; margin: auto; }
+        h2 { color: #2c3e50; border-bottom: 2px solid #3498db; padding-bottom: 10px; }
+        .price-box { display: flex; justify-content: space-between; background: #f8f9fa; padding: 15px; margin: 10px 0; border-radius: 10px; border-right: 5px solid #2ecc71; }
+        .currency-name { font-weight: bold; font-size: 18px; }
+        .currency-value { color: #27ae60; font-size: 20px; font-weight: bold; }
+        .ad-banner { background: #ddd; height: 60px; margin: 15px 0; display: flex; align-items: center; justify-content: center; font-size: 12px; color: #666; border-radius: 8px; }
+        .btn-update { background: #3498db; color: white; border: none; padding: 12px 25px; border-radius: 10px; cursor: pointer; font-size: 16px; width: 100%; margin-top: 10px; }
+    </style>
+</head>
+<body>
+
+<div class="app-card">
+    <h2>أسعار العملات (السكوار) 🇩🇿</h2>
+    
+    <div class="ad-banner">مساحة إعلانات جوجل (AdMob)</div>
+
+    <div class="price-box">
+        <span class="currency-name">1 أورو (€)</span>
+        <span class="currency-value" id="eur">24,200 دج</span>
+    </div>
+
+    <div class="price-box">
+        <span class="currency-name">1 دولار ($)</span>
+        <span class="currency-value" id="usd">22,500 دج</span>
+    </div>
+
+    <div class="price-box" style="border-right-color: #f1c40f;">
+        <span class="currency-name">1 جنيه استرليني (£)</span>
+        <span class="currency-value" id="gbp">28,100 دج</span>
+    </div>
+
+    <button class="btn-update" onclick="location.reload()">تحديث الأسعار 🔄</button>
+
+    <div class="ad-banner">مساحة إعلانات جوجل (AdMob)</div>
+
+    <p style="font-size: 12px; color: #888;">* الأسعار تقريبية حسب سوق السكوار اليوم</p>
+</div>
+
+</body>
+</html>
